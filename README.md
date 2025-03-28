@@ -19,7 +19,7 @@ This project is a Rust application that interacts with a MySQL database. It allo
 1. **Clone the repository:**
 
     ```sh
-    git clone https://github.com/yourusername/r-mysqlgit
+    git clone https://github.com/Rohandevops/r-mysqlgit
     cd r-mysql
     ```
 
