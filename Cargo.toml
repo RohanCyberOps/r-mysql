@@ -2,7 +2,26 @@
 name = "MySQL"
 version = "0.1.0"
 edition = "2021"
+authors = ["Rohan <Rohan150907@gmail.com>"]
+description = "MySQL database application"
+license = "MIT"
+repository = ""
 
 [dependencies]
-mysql = "20.1.0"
+# Database
+mysql = "20.1.0"  # or consider sqlx = { version = "0.7", features = ["mysql", "runtime-tokio"] }
+
+# Async
 tokio = { version = "1", features = ["full"] }
+
+# Logging
+log = "0.4"
+env_logger = "0.11"
+
+# Utilities
+dotenv = "0.15"  # For .env file support
+anyhow = "1.0"   # For easier error handling
+thiserror = "1.0" # For custom error types
+
+[dev-dependencies]
+# Add any test-specific dependencies here
